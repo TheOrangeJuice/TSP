@@ -121,3 +121,4 @@ opoints = centers.loc[segment]
 line_ = opoints.hvplot.line('X', 'Y', xlim=(0,5100), ylim=(0,3400), color='green', width=500, height=450) 
 denses*sparses*dpts*spts*npole*line_
 
+#fine
