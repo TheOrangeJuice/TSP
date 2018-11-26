@@ -1,4 +1,5 @@
 #test
+
 import numpy as np
 import pandas as pd
 from sympy import sieve
@@ -32,7 +33,7 @@ denses = cities.hvplot.scatter('X', 'Y',  by='clusts', size=5, width=500, height
                 datashade=True, dynspread=True, cmap=custcolor)
 denses
 
-from sklearn.cluster import KMeans
+from sklearn.cluster import KMeans #utilizza algoritmo non supervisionato
 
 misfits = cities[cities.clusts == -1].copy()
 kmeans = KMeans(n_clusters=16, random_state=99, n_jobs=-1)
